@@ -1,90 +1,151 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-<a href="" lang="en"><span>Web</span>Studio</a>
-<nav>
-<ul>
-    <li><a href="">студія</a></li>
-    <li><a href="">портфоліо</a></li>
-    <li><a href="">контакти</a></li>
-</ul>
-</nav>
-    <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
+      <a href="" class="logo" lang="en">Web<span class="txt-black">Studio</span></a>
+      <nav>
+        <ul class="list">
+          <li><a class="link-current" href="./index.html">студія</a></li>
+          <li><a class="link" href="./portfolio.html">портфоліо</a></li>
+          <li><a class="link" href="">контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="list">
+        <li><a class="link-current" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
     </header>
     <main>
-<section>
-    <h1>Ефективні рішення для <br>вашого бізнесу</h1>
-    <button type="button">Замовити послугу</button>
-</section>
-<section>
-    <h2 hidden>Особливості</h2>
-    <ul>
-        <li>
-        <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-        <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-        </li>
-        <li>
-        <h3>ПУНКТУАЛЬНІСТЬ</h3>
-        <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-        </li>
-        <li>
-        <h3>ПЛАНУВАННЯ</h3>
-        <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-        </li>
-        <li>
-        <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-        <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-        </li>
-    </ul>
-</section>
-<section>
-    <h2>Чим ми займаємося</h2>
-    <ul>
-        <li><img src="./images/gallery-1.jpg" alt="галерея" width="370" height="386"></li>
-        <li><img src="./images/gallery-2.jpg" alt="галерея" width="370" height="386"></li>
-        <li><img src="./images/gallery-3.jpg" alt="галерея" width="370" height="386"></li>
-    </ul>
-</section>
-<section>
-    <h2>Наша команда</h2>
-    <ul>
-        <li><img src="./images/team-card-1.jpg" alt="наша команда" width="270" height="260">
-        <h3>Ігор Дем'яненко</h3>
-        <p lang="en">Product Designer</p>
-        </li>
-        <li><img src="./images/team-card-2.jpg" alt="наша команда" width="270" height="260">
-            <h3>Ольга Рєпіна</h3>
-            <p lang="en">Frontend Developer</p>   
-        </li>
-        <li><img src="./images/team-card-3.jpg" alt="наша команда" width="270" height="260">
-            <h3>Микола Тарасов</h3>
-            <p lang="en">Marketing</p> 
-        </li>
-        <li><img src="./images/team-card-4.jpg" alt="наша команда" width="270" height="260">
-            <h3>Михайло Єрмаков</h3>
-            <p lang="en">UI Designer</p>
-        </li>
-    </ul>
-</section>
+      <section class="hero-section">
+        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
+        <button class="btn-hero" type="button">Замовити послугу</button>
+      </section>
+      <section>
+        <h2 hidden class="visually-hidden">Особливості</h2>
+        <ul class="list">
+          <li>
+            <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li>
+            <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li>
+            <h3 class="subtitle">ПЛАНУВАННЯ</h3>
+            <p class="text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li>
+            <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Чим ми займаємося</h2>
+        <ul class="list">
+          <li>
+            <img
+              src="./images/gallery-1.jpg"
+              alt="галерея"
+              width="370"
+              height="386"/>
+          </li>
+          <li>
+            <img
+              src="./images/gallery-2.jpg"
+              alt="галерея"
+              width="370"
+              height="386"/>
+          </li>
+          <li>
+            <img
+              src="./images/gallery-3.jpg"
+              alt="галерея"
+              width="370"
+              height="386"/>
+          </li>
+        </ul>
+      </section>
+      <section class="our-team">
+        <h2 class="title">Наша команда</h2>
+        <ul class="list">
+          <li>
+            <img
+              src="./images/team-card-1.jpg"
+              alt="наша команда"
+              width="270"
+              height="260"/>
+            <h3 class="subtitle-img">Ігор Дем'яненко</h3>
+            <p class="text-img" lang="en">Product Designer</p>
+          </li>
+          <li>
+            <img
+              src="./images/team-card-2.jpg"
+              alt="наша команда"
+              width="270"
+              height="260"/>
+            <h3 class="subtitle-img">Ольга Рєпіна</h3>
+            <p class="text-img" lang="en">Frontend Developer</p>
+          </li>
+          <li>
+            <img
+              src="./images/team-card-3.jpg"
+              alt="наша команда"
+              width="270"
+              height="260"/>
+            <h3 class="subtitle-img">Микола Тарасов</h3>
+            <p class="text-img" lang="en">Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/team-card-4.jpg"
+              alt="наша команда"
+              width="270"
+              height="260"/>
+            <h3 class="subtitle-img">Михайло Єрмаков</h3>
+            <p class="text-img" lang="en">UI Designer</p>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>
-<a href=""lang="en"><span>Web</span>Studio</a>
-<address>
-    <ul>
-        <li><a href="https://goo.gl/maps/NaW1mxKF8MjCK2XS7" target="_blank" rel="noopener noreferrer"></a>м. Київ, пр-т Лесі Українки, 26</li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
-</address>
+    <footer class="bottom">
+      <a class="logo" href="" lang="en">Web<span class="txt-white">Studio</span></a>
+      <address>
+        <ul class="list">
+          <li>
+            <a class="link-footer" 
+              href="https://goo.gl/maps/NaW1mxKF8MjCK2XS7"
+              target="_blank"
+              rel="noopener noreferrer"> 
+          м. Київ, пр-т Лесі Українки, 26 </a>
+          </li>
+          <li><a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="link-footer" href="tel+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
     </footer>
-</body>
+  </body>
 </html>
