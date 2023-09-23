@@ -20,7 +20,7 @@ background-color: var(--main-bg);
 font-family: var(--secondary-font);
 font-size: 26px;
 font-weight: 700;
-line-height: 1,2;
+line-height: normal;
 letter-spacing: 0.78px;
 color: var(--accent-cl);
 text-decoration: none;
@@ -36,12 +36,25 @@ color: var(--secondary-text-cl);
 font-family: inherit;
 font-size: 14px;
 font-weight: 500;
-line-height: 1,2;
+line-height: normal;
 letter-spacing: 0.28px;  
 text-decoration: none;
 }
-.list .link:hover,
-.list .link:focus {
+.list .link-tel {
+color: var(--main-text-cl);
+font-family: inherit;
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;  
+text-decoration: none;
+}
+.link:hover,
+.link:focus {
+color: var(--accent-cl);
+}
+.link-tel:hover,
+.link-tel:focus {
 color: var(--accent-cl);
 }
 .list .link-current {
@@ -58,6 +71,7 @@ font-size: 44px;
 font-weight: 900;
 line-height: 1.36; /* 136.364% */
 letter-spacing: 2.64px;
+text-transform: uppercase;
 }
 .btn-hero {
 color: var(--complementary-text-cl);
@@ -128,8 +142,15 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 text-decoration: none;
 }
-.list .link-footer:hover,
-.list .link-footer:focus {
+.link-footer:hover,
+.link-footer:focus {
+color: var(--accent-cl);
+}
+.list .link-contacts {
+color: rgba(255, 255, 255, 0.60);
+}
+.link-contacts:hover,
+.link-contacts:focus {
 color: var(--accent-cl);
 }
 .btn {
@@ -156,6 +177,11 @@ cursor: pointer;
 color: var(--complementary-text-cl);
 background-color: var(--button-bg);
 }
+.link-portfolio {
+font-family: inherit;
+font-style: normal;
+text-decoration: none;
+}
 .title-portfolio {
 color: var(--secondary-text-cl);
 font-size: 18px;
@@ -164,6 +190,7 @@ line-height: 2.00; /* 200% */
 letter-spacing: 1.08px;
 }
 .text-portfolio {
+color: var(--main-text-cl);
 font-size: 16px;
 line-height: 1.88; /* 187.5% */
 letter-spacing: 0.48px;
