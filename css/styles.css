@@ -40,6 +40,10 @@ line-height: normal;
 letter-spacing: 0.28px;  
 text-decoration: none;
 }
+.list .link:hover,
+.list .link:focus {
+color: var(--accent-cl);
+}
 .list .link-tel {
 color: var(--main-text-cl);
 font-family: inherit;
@@ -49,17 +53,12 @@ line-height: normal;
 letter-spacing: 0.28px;  
 text-decoration: none;
 }
-.link:hover,
-.link:focus {
-color: var(--accent-cl);
-}
 .link-tel:hover,
 .link-tel:focus {
 color: var(--accent-cl);
 }
 .list .link-current {
 color: var(--accent-cl);
-text-decoration: none;
 }
 .hero-section {
 background-color: var(--secondary-bg);
