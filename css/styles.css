@@ -59,6 +59,11 @@ color: var(--accent-cl);
 }
 .list .link-current {
 color: var(--accent-cl);
+font-family: inherit;
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
 }
 .hero-section {
 background-color: var(--secondary-bg);
